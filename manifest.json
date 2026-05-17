@@ -17,9 +17,14 @@
     },
     {
       "matches": ["*://docs.google.com/*"],
-      "js": ["docs_fix.js"],
-      "run_at": "document_start",
-      "world": "MAIN"
+      "js": ["docs_fix_injector.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["docs_fix.js"],
+      "matches": ["*://docs.google.com/*"]
     }
   ]
 }

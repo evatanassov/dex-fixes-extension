@@ -1,14 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "DeX Productivity Suite",
-  "version": "1.4",
-  "description": "DeX hover, Docs fix, and auto-focus New Tab.",
-  "permissions": [
-    "tabs"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "name": "DeX Hover & Docs Fix",
+  "version": "1.0",
+  "description": "DeX hover enforcer and Docs text selection fix.",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

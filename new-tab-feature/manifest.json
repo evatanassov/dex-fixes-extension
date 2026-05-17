@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "DeX New Tab Search",
+  "version": "1.0",
+  "description": "Auto-focused new tab search via Alt+T.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open_new_tab": {
+      "suggested_key": {
+        "default": "Alt+T",
+        "mac": "Alt+T"
+      },
+      "description": "Open custom new tab"
+    }
+  }
+}

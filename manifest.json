@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "DeX Productivity Suite",
+  "version": "1.4",
+  "description": "DeX hover, Docs fix, and auto-focus New Tab.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://docs.google.com/*"],
+      "js": ["docs_fix.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

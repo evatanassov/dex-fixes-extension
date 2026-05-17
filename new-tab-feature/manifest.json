@@ -4,7 +4,9 @@
   "version": "1.0",
   "description": "Auto-focused new tab search via Alt+T.",
   "permissions": [
-    "tabs"
+    "tabs",
+    "history",
+    "bookmarks"
   ],
   "background": {
     "service_worker": "background.js"
